@@ -8,14 +8,14 @@ def eval_math(expression: str):
         return 0
 	
     #Block letters (upper and lower case).
-    elif any(char.isalpha() for char in expression.lower()):
+    elif any(char.isalpha() for char in expression):
         return 0
 		
     #Block due to operator absence.
     elif not any(sub_str in ["+", "-", "*", "/", "%", "//", "**"] for sub_str in expression):
         return 0
 
-    #Everything seems secure.
+    #Everything should be secure.
     try:
         return eval(expression)
     except:

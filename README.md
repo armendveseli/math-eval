@@ -1,2 +1,2 @@
 # math-eval
-A Python math evaluator with a wrapper of eval() that makes it more secure.
+A Python math evaluator using a wrapper of eval() that makes it more secure.
